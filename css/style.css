@@ -1,0 +1,713 @@
+body {
+    font-family: Arial, sans-serif;
+    padding: 0;
+    margin: 0;
+    min-width: 1200px;
+    line-height: 30px;
+    font-size: 16px;
+    background-color: white;
+    color: black;
+}
+
+.container {
+    width: 800px;
+    margin: 0 auto;
+    padding: 0;
+}
+
+/*
+        ШАПКА
+*/
+
+.header {
+    width: 100%;
+    min-height: 490px;
+    padding: 0;
+    margin: 0;
+    padding-top: 60px;
+    background-color: saddlebrown;
+    background-image: url('../img/wheat-back.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom;
+}
+
+.header .logo {
+    float: left;
+}
+
+.header .logo img {
+    width: 140px;
+    height: 76px;
+}
+
+.main-nav {
+    float: right;
+    padding: 0;
+    margin: 0;
+    margin-top: 10px;
+    list-style: none;
+    border-top: solid 1px rgba(255, 255, 255, 0.2);
+    border-bottom: solid 1px rgba(255, 255, 255, 0.2);
+}
+
+.clearfix::after {
+    clear: both;
+    content: '';
+    display: table;
+}
+
+.main-nav li {
+    display: inline-block;
+    margin-left: 50px;
+    position: relative;
+    height: 43px;
+    padding-top: 14px;
+}
+
+.main-nav li:first-child {
+    margin-left: 0;
+}
+
+.main-nav li a {
+    text-decoration: none;
+    color: white;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+.main-nav li a::after {
+    display: block;
+    content: '';
+    background-color: white;
+    width: 0%;
+    height: 1px;
+    position: absolute;
+    left: 0;
+    bottom: -1px;
+}
+
+.main-nav li a:hover {
+    color: #ffcb78;
+}
+
+.main-nav li a:hover::after {
+    width: 100%;
+}
+
+.header .tagline {
+    display: block;
+    font-family: Arial, sans-serif;
+    font-weight: 700;
+    font-size: 70px;
+    line-height: 70px;
+    color: white;
+    padding: 0;
+    margin: 0 auto;
+    margin-top: 110px;
+    width: 100%;
+    text-align: center;
+}
+
+/* Раздел новинки */
+
+.new-items {
+    padding: 0;
+    margin: 0;
+    padding-top: 80px;
+    padding-bottom: 110px;
+}
+
+h2, h3 {
+    padding: 0;
+    margin: 0;
+    font-size: 40px;
+    line-height: 40px;
+    text-transform: uppercase;
+}
+
+
+.new-items .section-title {
+    padding: 0;
+    margin: 0;
+    padding: 10px 0px;
+    margin-bottom: 75px;
+}
+
+.new-item {
+    padding: 0;
+    margin: 0;
+    padding: 10px 26px 0px 34px;
+    width: 338px;
+    border-left: solid 1px #e5e5e5;
+    border-right: solid 1px #e5e5e5;
+    float: left;
+    box-sizing: content-box;
+    position: relative;
+}
+
+.new-item-2 {
+    border-left: none;
+}
+
+.new-items .card-contents {
+    position: relative;
+    padding: 0;
+    margin: 0;
+}
+
+.item-title {
+    margin-bottom: 40px;
+}
+
+.features {
+    width: 150px;
+    padding: 0;
+    margin: 0;
+    position: absolute;
+    top: -5px;
+    right: -1px;
+}
+
+.features .consist-table {
+    padding: 0;
+    margin: 0;
+    border-collapse: collapse;
+    width: 150px;
+}
+
+.features td {
+    border: 1px solid #e5e5e5;
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-align: left;
+    padding: 5px 10px;
+    color: black;
+}
+
+.features .consist {
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 24px;
+    color: #404040;
+    margin: 0;
+    padding: 0;
+    margin-top: 10px;
+}
+
+.new-items img {
+    padding: 0;
+    margin: 0;
+    margin-left: 10px;
+}
+
+.card-description {
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 30px;
+    color: #404040;
+    margin: 0;
+    padding: 0;
+    margin-bottom: 60px;
+}
+
+.btn {
+    padding: 8px 0;
+    margin: 0;
+    text-decoration: none;
+    display: inline-block;
+    font-weight: 700;
+    text-align: center;
+    text-transform: uppercase;
+    float: left;
+    margin-right: 7px;
+    border: solid 2px #834700;
+}
+
+.btn-info {
+    color: #834700;
+    background-color: white;
+    width: 142px;
+    clear: left;
+}
+
+.btn-buy {
+    color: white;
+    background-color: #834700;
+    width: 105px;
+}
+
+.price {
+    display: inline-block;
+    font-family: Arial, sans-serif;
+    font-size: inherit;
+    font-weight: 700;
+    padding: 10px 0;
+    margin: 0;
+    margin-left: 18px;
+    float: left;
+}
+
+/*
+        ДОСТОИНСТВА
+*/
+
+.advantages {
+    margin: 0;
+    padding-top: 80px;
+    padding-bottom: 90px;
+    background-color: #ffcb78;
+}
+
+.advantages .container {
+    width: 1014px;
+}
+
+.advantage-list {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+.advantage-list li {
+    position: relative;
+    float: left;
+    padding: 0;
+    margin: 0;
+    padding-left: 95px;
+    padding-top: 95px;
+    display: inline-block;
+    border-right: solid 1px #e5b66c;
+    box-sizing: border-box;
+}
+
+.advantage-list .advantage-item1 {
+    width: 306px;
+    padding-left: 0;
+}
+
+.advantage-list .advantage-item2 {
+    width: 401px;
+}
+
+.advantage-list .advantage-item3 {
+    width: 305px;
+}
+
+.advantage-list li::before {
+    position: absolute;
+    top: 0;
+    content: '';
+    display: block;
+}
+
+.advantage-item1::before {
+    width: 50px;
+    height: 68px;
+    background-image: url('../img/icon-brew.png');
+}
+
+.advantage-item2::before {
+    left: 95px;
+    width: 46px;
+    height: 65px;
+    background-image: url('../img/icon-matreshka.png');
+}
+
+.advantage-item3::before {
+    left: 95px;
+    width: 63px;
+    height: 58px;
+    background-image: url('../img/icon-thumbsup.png');
+}
+
+.advantage-list li:last-child {
+    border: none;
+}
+
+.advantage-list h2 {
+    padding: 0;
+    margin: 0;
+    margin-bottom: 15px;
+    width: 210px;
+    font-size: 20px;
+}
+
+.advantage-list p {
+    margin: 0;
+    padding: 0;
+    width: 210px;
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 30px;
+    color: #404040;
+}
+
+/* 
+    *** НЕМНОГО ИСТОРИИ ***
+*/
+
+.kvass-history {
+    margin: 0;
+    padding: 0;
+    padding-top: 80px;
+    padding-bottom: 90px;
+}
+
+.kvass-history h2 {
+    padding: 10px 0;
+    margin: 0;
+    margin-bottom: 60px;
+}
+
+.historical-facts {
+    padding: 0;
+    margin: 0;
+    width: 100%;
+}
+
+.historical-facts dt {
+    position: relative;
+    padding: 0;
+    margin: 0;
+    padding-right: 310px;
+    margin-top: 60px;
+    margin-bottom: 20px;
+    font-family: Arial, sans-serif;
+    font-size: 20px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.historical-facts dt:first-child {
+    margin-top: 0;
+}
+
+.historical-facts dt i {
+    position: absolute;
+    right: 0;
+    font-family: Arial, sans-serif;
+    font-style: italic;
+    font-size: 16px;
+    font-weight: 300;
+    text-transform: none;
+}
+
+.historical-facts dt a {
+    color: #834700;
+}
+
+.historical-facts dd {
+    position: relative;
+    padding: 0;
+    margin: 0;
+    padding-right: 310px;
+
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    font-weight: 300;
+    color: #404040;
+}
+
+.historical-facts dd img {
+    position: absolute;
+    right: 0;
+    top: 10px;
+}
+
+/*
+    *** ПРЕССА О НАС***
+*/
+
+.review {
+    padding: 0;
+    margin: 0;
+    padding-top: 80px;
+    padding-bottom: 90px;
+    background-color: #ede5d8;
+}
+
+.review h2 {
+    padding: 10px 0;
+    margin: 0;
+    margin-bottom: 75px;
+}
+
+.review-content {
+    position: relative;
+    padding: 0;
+    margin: 0;
+    padding-bottom: 10px;
+}
+
+.review-content p {
+    position: relative;
+    padding: 0;
+    margin: 0;
+    margin-right: 110px;
+    margin-bottom: 45px;
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 30px;
+    color: #404040;
+}
+
+.review-content p::before {
+    position: absolute;
+    top: 0;
+    left: -105px;
+    content: '';
+    display: inline-block;
+    width: 41px;
+    height: 31px;
+    background-image: url('../img/quotes.png');
+}
+
+.review-content cite {
+    display: inline-block;
+    float: right;
+    clear: right;
+    font-family: Arial, sans-serif;
+    font-style: normal;
+    font-size: 20px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.review-content a {
+    position: absolute;
+    bottom: 0px;
+    left: 0;
+    padding: 0;
+    margin: 0;
+    padding: 10px 20px;
+    display: inline-block;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #bcb6ab;
+    border: solid 2px #a5a097;
+}
+
+.catalog {
+    padding: 90px 0;
+    margin: 0;
+}
+
+.catalog h2 {
+    padding: 10px 0;
+    margin: 0;
+    margin-bottom: 75px;
+}
+
+.catalog-items {
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    border-collapse: collapse;
+}
+
+.catalog-items th {
+    padding: 0 0;
+    padding-top: 10px;
+    padding-bottom: 39px;
+    padding-left: 1px;
+    padding-right: 1px;
+    line-height: 12px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    font-weight: 300;
+    letter-spacing: -0.9px;
+    text-transform: uppercase;
+    text-align: left;
+    color: #999999;
+}
+
+.catalog-items td {
+    padding: 17px 0;
+    margin: 0;
+    color: #404040;
+    text-transform: uppercase;
+}
+
+.catalog-items tr {
+    border-bottom: solid 1px #e5e5e5;
+}
+
+.catalog-items .catalog-item {
+    width: 402px;
+    text-align: left;
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 30px;
+    color: #000000;
+}
+
+.catalog-items .catalog-item sup {
+    padding: 2px 5px;
+    margin-left: 20px;
+    font-family: Arial, sans-serif;
+    font-size: 8px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: white;
+    background-color: black;
+    border-radius: 2px;
+}
+
+.catalog-items .strength {
+    width: 90px;
+}
+
+.catalog-items .kcal {
+    width: 60px;
+}
+
+.catalog-items .volume {
+    width: 150px;
+}
+
+.catalog-items .cost {
+    text-align: right;
+}
+
+/* ЗАКАЗАТЬ */
+
+.order {
+    padding: 0 0;
+    margin: 0 0;
+    padding-top: 80px;
+    padding-bottom: 110px;
+    background-color: #ffcb78;
+}
+
+.order h2 {
+    padding: 10px 0;
+    margin: 0 0;
+    margin-bottom: 75px;
+}
+
+.order p {
+    width: 660px;
+    padding: 0;
+    margin: 0;
+    margin-bottom: 70px;
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 30px;
+    color: #404040;
+}
+
+.order-form {
+    padding: 0 0;
+    margin: 0 0;
+    padding-top: 2px;
+    padding-bottom: 50px;
+    width: 630px;
+}
+
+.order-form-group {
+    padding: 0 0;
+    margin: 0 0;
+}
+
+.order-form label {
+    display: block;
+    padding: 0 0;
+    margin: 0 0;
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 16px;
+    text-transform: uppercase;
+    color: #000000;
+}
+
+.order-form-group textarea {
+    padding: 0 0;
+    margin: 0 0;
+    min-height: 120px;
+    resize: none;
+}
+
+.order-form-group input[type=text],
+ .order-form-group textarea {
+     margin-top: 12px;
+     margin-bottom: 27px;
+     height: 48px;
+     width: 100%;
+     background-color: #e5b66c;
+    border: none;
+}
+
+.order-form-group select {
+    margin-top: 18px;
+    margin-bottom: 32px;
+}
+
+.order-form .number-left,
+.order-form .number-right {
+    width: 290px;
+}
+
+.order-form .number-left {
+    float: left;
+}
+
+.order-form .number-right {
+    float: right;
+}
+
+.order-form .checkbox-area {
+    padding: 0 0;
+    margin: 0 0;
+    margin-top: 13px;
+    margin-bottom: 46px;
+}
+
+.order-form .checkbox-area input {
+    padding: 0 0;
+    margin: 0 0;
+    margin-right: 14px;
+}
+
+.order-form .btn {
+    display: inline-block;
+    height: 50px;
+    width: 200px;
+    border: none;
+    text-align: center;
+    font: inherit;
+    font-weight: bold;
+    color: #ffffff;
+    background-color: #834700;    
+}
+
+/*
+    FOOTER
+*/
+
+.footer {
+    padding: 0 0;
+    margin: 0 0;
+    padding-top: 60px;
+    background-color: #000000;
+}
+
+.wide-container {
+    padding: 0 0;
+    margin: 0 auto;
+    width: 1015px;
+}
+
+
+
+
